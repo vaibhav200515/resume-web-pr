@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions</title>
+<a href="index.html">Home</a>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #sidebar {
+    background-color: #fff;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  #sidebar h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #sidebar ul li {
+    margin-bottom: 10px;
+  }
+
+  #sidebar ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+
+  #sidebar ul li a:hover {
+    color: #333;
+  }
+
+  #content {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  #footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+  }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Terms & Conditions</h1>
+</div>
+
+<div id="container">
+  <div id="sidebar">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="terms.html" target="content">Terms of Use</a></li>
+      <li><a href="privacy.html" target="content">Privacy Policy</a></li>
+      <!-- Add more links here -->
+    </ul>
+  </div>
+
+  <div id="content">
+    <iframe name="content" src="terms.html" width="100%" height="600"></iframe>
+  </div>
+</div>
+
+<div id="footer">
+  <p>&copy; 2024 Terms & Conditions. All rights reserved.</p>
+</div>
+
+</body>
+</html>
