@@ -4,8 +4,71 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Online Food Menu</title>
-<a href="index.html">Home</a>
 <style>
+  *{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+    list-style:none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color:yellow;
+    --text-color: black;
+    --bg-color: orange;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+*::selection {
+    background: var(--main-color);
+    color:#fff;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+  header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background: var(--bg-color)
+}
+.logo{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+}
+#menu-icon{
+    font-size:2rem;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 70px 17%;
+}
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -90,10 +153,25 @@
 </style>
 </head>
 <body>
+  <header>
+    <a href="#"> <i class='bx bxl-venmo' ></i></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="bar"><br>
+      <li><h1>Food menu</h1></li>
+    </ul>
+  
+    <ul class="navbar">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="formss.html">Contact</a></li>
+  </ul>
+ </header>
 
 <div class="container">
   <h1>Food Menu</h1>
-
+<br><br><br><br>
   <div class="menu">
     <div class="item">
       <img src="veggie-burgers-1-2.webp" alt="Food Item">
@@ -209,6 +287,8 @@
       </div>
       
       <script>
+
+
         // Function to add item to cart
         function addToCart(name, price) {
           // Create new list item
@@ -218,7 +298,10 @@
           // Append to cart
           document.getElementById("cart").appendChild(listItem);
         }
+
+
       </script>
+      <script type="text/javascript" src="menu.js"></script>
     
 </body>
 </html>
